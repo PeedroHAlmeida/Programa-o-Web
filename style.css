@@ -3,11 +3,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.6;    
+    background-image: linear-gradient(24deg, #0f152b, #0d0f1a);
 }
 
-header, footer {
-    background-color: #333;
+header {
+    background-color: #0d0f1a;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+footer {
+    background-color: #0b0d17;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -19,6 +28,7 @@ main {
     margin: auto;
 }
 
+
 /* Estilos de imagens e vídeos */
 img, video {
     max-width: 100%;
@@ -28,54 +38,84 @@ img, video {
     border-radius: 8px;
 }
 
+.image-row {
+    display: flex;
+    gap: 20px; /* Espaço entre as imagens */
+    justify-content: center; /* Centraliza as imagens no contêiner */
+}
+
+.image-row img {
+    width: 200px; /* Define um tamanho para as imagens */
+    height: auto;
+    border-radius: 8px;
+}
+
+
 /* Tamanhos específicos para imagens */
-#pais, #bella, #programando, #Raquete, #poker {
+#pais, #bella, #poker, #Raquete {
     width: 300px;
 }
 
 #eu {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
-    height: 200px;
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: 300px;
     border-radius: 50%;
-    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+    object-fit: cover;
     display: block;
     margin: 15px auto;
+}
+
+#jogando{
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+}
+
+#programando{
+    width: 400px;
 }
 
 #boliche, #gspk1ng, #renzobryl {
     width: 250px;
 }
 
-/* Estilos de vídeos */
-#videoTenis, #videoFut {
-    max-width: 80%;
+#videoFut{
+    max-width: 40%;
     height: auto;
 }
 
-/* Títulos e textos */
-h1, h2, h3, h4 {
-    color: #333;
+#gspk1ng, #renzobryl{
+    width: 400px;
+}
+
+#boliche {
+    width: 350px;
+}
+
+h2, h3, h4, p {
+    color: white;
     text-align: center;
 }
 
-p {
-    color: #555;
-    margin-bottom: 1em;
+h2 {
+    font-size: 30px;
 }
 
-/* Links */
+h3, h4 {
+    font-size: 20px;
+}
+
 a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover {
+    color: white;
     text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
-/* Contato no rodapé */
-footer address {
-    font-style: normal;
-    color: #ccc;
-    margin-top: 1em;
+a:hover {  
+    color: white;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 2px;
 }
