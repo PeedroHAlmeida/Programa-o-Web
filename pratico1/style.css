@@ -1,0 +1,81 @@
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Estilos de imagens e vídeos */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* Tamanhos específicos para imagens */
+#pais, #bella, #programando, #Raquete, #poker {
+    width: 300px;
+}
+
+#eu {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+    display: block;
+    margin: 15px auto;
+}
+
+#boliche, #gspk1ng, #renzobryl {
+    width: 250px;
+}
+
+/* Estilos de vídeos */
+#videoTenis, #videoFut {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Títulos e textos */
+h1, h2, h3, h4 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    margin-bottom: 1em;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contato no rodapé */
+footer address {
+    font-style: normal;
+    color: #ccc;
+    margin-top: 1em;
+}
