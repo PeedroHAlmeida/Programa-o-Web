@@ -47,6 +47,13 @@ img, video {
     display: flex;
     gap: 20px; /* Espaço entre as imagens */
     justify-content: center; /* Centraliza as imagens no contêiner */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha em telas pequenas */
+}
+
+.image-row img {
+    width: 200px; /* Tamanho padrão para telas maiores */
+    height: auto;
+    border-radius: 8px;
 }
 
 .image-row img {
@@ -135,4 +142,11 @@ a:hover {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-underline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+    .image-row img {
+        width: 100%; /* Ajusta as imagens para ocupar 100% da largura do contêiner em telas pequenas */
+        max-width: 300px; /* Limita a largura máxima da imagem para não ficar muito grande */
+    }
 }
